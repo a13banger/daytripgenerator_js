@@ -34,3 +34,10 @@ function entertainmentPicker() {
 }
 let enterResults = entertainmentPicker();
 console.log(enterResults);
+
+// Initial test of connecting the randomizer to the HTML button
+document.getElementById("trip_button").addEventListener("click", tripClick);
+function tripClick() {
+    document.getElementById("trip_result").innerHTML = result;
+
+}
